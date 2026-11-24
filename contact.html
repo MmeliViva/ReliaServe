@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="0;url=index.html#contact">
-    <title>Contact ReliaServe | Managed IT &amp; Cybersecurity</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Request managed IT, cybersecurity or backup assistance from ReliaServe.">
+<link rel="canonical" href="https://www.ireliaserve.co.za/contact.html">
+<title>Contact ReliaServe | IT Consultation South Africa</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/tech.css" rel="stylesheet">
 </head>
 <body>
-    <p>This page has moved. <a href="index.html#contact">Contact ReliaServe</a>.</p>
-</body>
-</html>
+<header class="site-header"><nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
+<a class="navbar-brand brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span><span><span class="brand-capital">R</span>elia<span class="brand-accent">S</span>erve</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><span class="fa-solid fa-bars"></span></button>
+<div class="collapse navbar-collapse" id="mainNav"><div class="navbar-nav ms-auto align-items-lg-center"><a class="nav-link" href="index.html#services">Services</a><a class="nav-link" href="index.html#acronis">Solutions</a><a class="nav-link" href="index.html#about">About Us</a><a class="nav-link" href="resources.html">Resources</a><a class="nav-link nav-cta" href="contact.html">Book a Consultation</a></div></div>
+</nav></header>
+<main>
+<section class="inner-hero"><div class="container"><div class="breadcrumb-row"><a href="index.html">Home</a><span>/</span><span>Contact</span></div><h1>Tell us about your technology challenge.</h1><p>Share the problem, priority or opportunity you want to address. We will help identify a practical next step.</p></div></section>
+<section class="content-section"><div class="container"><div class="enquiry-layout">
+<aside class="contact-details"><span class="section-kicker light-kicker">Direct enquiry</span><h2>Start a conversation</h2><p><i class="fa-solid fa-envelope"></i> <a href="mailto:gururecynthia@gmail.com">gururecynthia@gmail.com</a></p><p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27728511337" target="_blank" rel="noopener noreferrer">WhatsApp ReliaServe</a></p><p>Please do not include passwords or sensitive security information in your enquiry.</p></aside>
+<form class="enquiry-form" id="enquiryForm" novalidate>
+<div class="row g-3">
+<div class="col-md-6"><label for="name">Full name *</label><input class="form-control" id="name" name="name" autocomplete="name" required></div>
+<div class="col-md-6"><label for="business">Business name</label><input class="form-control" id="business" name="business" autocomplete="organization"></div>
+<div class="col-md-6"><label for="email">Email address *</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="col-md-6"><label for="phone">Phone number</label><input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel"></div>
+<div class="col-12"><label for="service">Service required *</label><select class="form-select" id="service" name="service" required><option value="">Select a service</option><option>Managed IT Support</option><option>Cybersecurity</option><option>Backup and Recovery</option><option>Network Support</option><option>IT Consultation</option><option>Other</option></select></div>
+<div class="col-12"><label for="challenge">Description of the challenge *</label><textarea class="form-control" id="challenge" name="challenge" required minlength="20"></textarea></div>
+<div class="col-12" aria-hidden="true" style="position:absolute;left:-9999px"><label>Website</label><input tabindex="-1" autocomplete="off" name="website"></div>
+<div class="col-12"><button class="button button-primary" type="submit">Prepare Email Enquiry <i class="fa-solid fa-arrow-right"></i></button><div class="form-status" id="formStatus" role="status"></div></div>
+</div>
+</form>
+</div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span><span><span class="brand-capital">R</span>elia<span class="brand-accent">S</span>erve</span></a><p>Secure. Connected. Supported.</p><div class="footer-links"><a href="managed-it.html">Managed IT</a><a href="cybersecurity.html">Cybersecurity</a><a href="backup-recovery.html">Backup & Recovery</a><a href="privacy.html">Privacy Policy</a></div></div><div class="container footer-disclaimer">Acronis is a trademark of its respective owner. ReliaServe is not affiliated with or endorsed by Acronis unless expressly stated.</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const form=document.getElementById('enquiryForm'),status=document.getElementById('formStatus');
+const params=new URLSearchParams(location.search);if(params.get('service'))document.getElementById('service').value=params.get('service');
+form.addEventListener('submit',function(e){
+ e.preventDefault();
+ if(form.website.value){return;}
+ if(!form.checkValidity()){form.classList.add('was-validated');status.textContent='Please complete the required fields correctly.';status.classList.add('visible');return;}
+ const data=new FormData(form),subject=encodeURIComponent('ReliaServe enquiry: '+data.get('service'));
+ const body=encodeURIComponent(['Full name: '+data.get('name'),'Business: '+(data.get('business')||'Not provided'),'Email: '+data.get('email'),'Phone: '+(data.get('phone')||'Not provided'),'Service: '+data.get('service'),'Challenge: '+data.get('challenge')].join('\n\n'));
+ status.textContent='Your email application is opening with the enquiry details filled in. Review and send it to complete your request.';status.classList.add('visible');
+ window.location.href='mailto:gururecynthia@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
