@@ -18,7 +18,7 @@
 <main>
 <section class="inner-hero"><div class="container"><div class="breadcrumb-row"><a href="index.html">Home</a><span>/</span><span>Contact</span></div><h1>Tell us about your technology challenge.</h1><p>Share the problem, priority or opportunity you want to address. We will help identify a practical next step.</p></div></section>
 <section class="content-section"><div class="container"><div class="enquiry-layout">
-<aside class="contact-details"><span class="section-kicker light-kicker">Direct enquiry</span><h2>Start a conversation</h2><p><i class="fa-solid fa-envelope"></i> <a href="mailto:gururecynthia@gmail.com">gururecynthia@gmail.com</a></p><p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27728511337" target="_blank" rel="noopener noreferrer">WhatsApp ReliaServe</a></p><p>Please do not include passwords or sensitive security information in your enquiry.</p></aside>
+<aside class="contact-details"><span class="section-kicker light-kicker">Direct enquiry</span><h2>Start a conversation</h2><p><i class="fa-solid fa-envelope"></i> <a href="mailto:infor@reliaserve.co.za">infor@reliaserve.co.za</a></p><p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27639119113" target="_blank" rel="noopener noreferrer">WhatsApp ReliaServe</a></p><p>Please do not include passwords or sensitive security information in your enquiry.</p></aside>
 <form class="enquiry-form" id="enquiryForm" novalidate>
 <div class="row g-3">
 <div class="col-md-6"><label for="name">Full name *</label><input class="form-control" id="name" name="name" autocomplete="name" required></div>
@@ -45,7 +45,7 @@ form.addEventListener('submit',function(e){
  const data=new FormData(form),subject=encodeURIComponent('ReliaServe enquiry: '+data.get('service'));
  const body=encodeURIComponent(['Full name: '+data.get('name'),'Business: '+(data.get('business')||'Not provided'),'Email: '+data.get('email'),'Phone: '+(data.get('phone')||'Not provided'),'Service: '+data.get('service'),'Challenge: '+data.get('challenge')].join('\n\n'));
  status.textContent='Your email application is opening with the enquiry details filled in. Review and send it to complete your request.';status.classList.add('visible');
- window.location.href='mailto:gururecynthia@gmail.com?subject='+subject+'&body='+body;
+ window.location.href='mailto:infor@reliaserve.co.za?subject='+subject+'&body='+body;
 });
 </script>
 </body></html>
