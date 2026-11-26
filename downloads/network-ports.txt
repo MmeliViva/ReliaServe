@@ -1,0 +1,21 @@
+RELIA SERVE KNOWLEDGE HUB
+Common Network Ports and Protocols
+Updated: 26 November 2026
+
+20/21   TCP   FTP data/control
+22      TCP   SSH secure remote administration
+53      TCP/UDP DNS name resolution
+67/68   UDP   DHCP addressing
+80      TCP   HTTP web traffic
+443     TCP   HTTPS encrypted web traffic
+110     TCP   POP3 email retrieval
+143     TCP   IMAP email retrieval
+389     TCP   LDAP directory services
+445     TCP   SMB file sharing
+3389    TCP   Remote Desktop
+587     TCP   Email submission with STARTTLS
+993     TCP   IMAPS encrypted email retrieval
+995     TCP   POP3S encrypted email retrieval
+
+PORTS CAN CHANGE WITH CONFIGURATION.
+Verify vendor documentation and firewall rules.

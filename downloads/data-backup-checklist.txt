@@ -1,0 +1,28 @@
+RELIA SERVE KNOWLEDGE HUB
+Business Data Backup Checklist
+Updated: 26 November 2026
+
+SCOPE
+[ ] Identify critical files, databases and configurations
+[ ] Assign data owners
+[ ] Document systems and applications needed for recovery
+
+COPIES
+[ ] At least three copies exist
+[ ] At least two storage types are used
+[ ] One copy is off-site or isolated
+[ ] Access to backup infrastructure is restricted
+
+RETENTION
+[ ] Recovery points meet the business recovery point objective
+[ ] Retention periods are documented
+
+MONITORING
+[ ] Backup successes and failures are reviewed
+[ ] Expiry, capacity and credential alerts are assigned
+
+RECOVERY
+[ ] Restoration steps are documented
+[ ] Representative data restores are tested
+[ ] Application consistency is verified
+[ ] Recovery results and dates are recorded

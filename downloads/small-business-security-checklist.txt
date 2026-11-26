@@ -1,0 +1,29 @@
+RELIA SERVE KNOWLEDGE HUB
+Small Business Cybersecurity Checklist
+Updated: 26 November 2026
+
+ACCOUNT SECURITY
+[ ] Multi-factor authentication enabled for critical accounts
+[ ] Shared accounts identified and removed where possible
+[ ] Former staff access removed promptly
+[ ] Administrator access limited
+
+DEVICE SECURITY
+[ ] Operating systems and applications receive supported updates
+[ ] Endpoint protection is active and reported
+[ ] Lost or stolen devices can be remotely locked or wiped
+
+EMAIL SECURITY
+[ ] SPF, DKIM and DMARC considered for company domains
+[ ] Staff know how to report suspicious messages
+[ ] External sender warnings are enabled where useful
+
+DATA AND RECOVERY
+[ ] Critical data has a documented backup scope
+[ ] A separate or isolated copy exists
+[ ] Restore tests have been completed and documented
+[ ] A continuity plan identifies recovery priorities
+
+MONITORING
+[ ] Unusual account and system events are reviewed
+[ ] Log retention and alert ownership are documented

@@ -1,0 +1,32 @@
+RELIA SERVE KNOWLEDGE HUB
+Linux Commands Cheat Sheet
+Updated: 26 November 2026
+
+NAVIGATION
+pwd       Print the current directory
+ls        List directory content
+cd <dir>  Change directory
+cd ..     Move to the parent directory
+
+FILES
+mkdir <dir>       Create a directory
+cp <source> <dest> Copy a file
+mv <source> <dest> Move or rename
+rm <file>         Remove a file
+cat <file>        Show file content
+
+PERMISSIONS
+ls -l             View permissions
+chmod 640 <file>  Set owner read/write and group read
+chown user:group <file>
+
+SYSTEM
+sudo <command>    Run an authorised command with elevated privileges
+df -h             View disk space
+free -h           View memory
+systemctl status <service>
+
+SAFETY
+Verify paths before rm or mv.
+Use sudo only when needed.
+Test commands in an authorised lab.
